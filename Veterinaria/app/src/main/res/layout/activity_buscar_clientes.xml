@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".buscar_clientes">
+
+    <TextView
+        android:text="Buscar clientes"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/letra"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etCodDni"
+            android:hint="Ingrese su DNI"
+            android:inputType="number"
+            android:maxLength="8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btConsultar"
+            android:textAllCaps="false"
+            android:text="Buscar"
+            android:backgroundTint="#DF4BAFA0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconGravity="textStart"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="495dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Informacion del cliente"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etNombreB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nombres"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etApellidoB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Apellidos"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Informacion de la mascota"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etNombreMascotaB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nombre Mascota"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etRazaB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Raza"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etColorB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Color"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etGeneroB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Genero"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

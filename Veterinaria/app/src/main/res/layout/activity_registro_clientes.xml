@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="70dp"
+    android:padding="50dp"
+    tools:context=".registro_clientes">
+
+    <TextView
+        android:text="¿Aún no tienes cuenta?"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:text="Regístrate"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:minHeight="48dp"/>
+
+
+    <EditText
+        android:id="@+id/etNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"
+        android:minHeight="48dp"/>
+
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DNI"
+        android:minHeight="48dp"  />
+
+    <EditText
+        android:id="@+id/etClaveacceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ClaveAcceso"
+        android:minHeight="48dp"/>
+
+
+    <Button
+        android:id="@+id/btRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#DF4BAFA0"
+        android:text="Ingresar" />
+
+
+
+
+</LinearLayout>
